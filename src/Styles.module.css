@@ -1,0 +1,309 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user__container {
+  display: flex;
+  align-items: center;
+}
+
+.view__container {
+  width: 500px;
+  background-color: yellow;
+  margin: 0px auto 40px;
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+  border-radius: 5px;
+  border-right: 5px double blueviolet;
+  border-bottom: 5px double blueviolet;
+}
+
+.home__container {
+  width: 500px;
+  background-color: yellow;
+  padding: 30px;
+  margin: 0px auto 40px;
+  display: flex;
+  text-align: center;
+  row-gap: 15px;
+  flex-direction: column;
+  padding: 100px;
+  border-radius: 5px;
+  border-right: 5px double blueviolet;
+  border-bottom: 5px double blueviolet;
+}
+
+.login__container {
+  width: 500px;
+  background-color: yellow;
+  padding: 30px;
+  margin: 0px auto 40px;
+  display: flex;
+  text-align: center;
+  row-gap: 15px;
+  flex-direction: column;
+  padding: 71px 100px;
+  border-radius: 5px;
+  border-right: 5px double blueviolet;
+  border-bottom: 5px double blueviolet;
+}
+
+.registration__container {
+  width: 500px;
+  background-color: yellow;
+  padding: 30px;
+  margin: 0px auto 40px;
+  display: flex;
+  text-align: center;
+  row-gap: 15px;
+  flex-direction: column;
+  padding: 47px 100px;
+  border-radius: 5px;
+  border-right: 5px double blueviolet;
+  border-bottom: 5px double blueviolet;
+}
+
+.please__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.form__container {
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cont__container {
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.items__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  min-width: 380px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  overflow: auto;
+}
+
+.header {
+  margin: 30px auto 20px;
+  width: 50%;
+  color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px 15px 15px;
+  border-radius: 5px;
+  border-right: 5px double blueviolet;
+  border-bottom: 5px double blueviolet;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 25px;
+  transition-duration: 100ms;
+  color: blueviolet;
+}
+
+.active {
+  color: red;
+}
+
+.user__name {
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 10px;
+  color: blueviolet;
+  margin-right: 20px;
+}
+
+.nav__link:hover {
+  color: red;
+}
+
+.user__link {
+  font-weight: 400;
+  font-size: 25px;
+  color: blueviolet;
+}
+
+.user__btn {
+  min-width: 67px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: blueviolet;
+  background-color: white;
+  transition: color 100ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user__btn:hover {
+  transform: scale(1.1);
+  outline: 2px solid yellow;
+  font-size: 16px;
+  color: red;
+}
+
+.log__out__btn {
+  background-color: rgb(229, 223, 236);
+  min-width: 70px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid rgb(200, 168, 237);
+  color: blueviolet;
+  transition: color 100ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.log__out__btn:hover {
+  transform: scale(1.1);
+  border: 2px solid yellow;
+  font-size: 15px;
+  color: red;
+}
+
+.form__btn {
+  padding: 6px 10px 9px;
+  margin-bottom: 30px;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  color: yellow;
+  border: none;
+  border-radius: 5px;
+  background-color: blueviolet;
+  cursor: pointer;
+  transition: color 100ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 100ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__btn:hover {
+  padding: 6px 10px 9px;
+  color: white;
+  outline: 3px solid white;
+  font-size: 19px;
+}
+
+.home__linc {
+  font-weight: 800;
+  font-size: 25px;
+  color: blueviolet;
+}
+
+.home__linc:hover {
+  font-size: 25px;
+}
+
+.active {
+  font-size: 25px;
+  cursor: auto;
+}
+
+.welcome__to {
+  transition-duration: 300ms;
+}
+
+.welcome__to:hover {
+  text-decoration: underline;
+}
+
+.auth__reg {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.phonebook__title {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 48px;
+  margin-top: 20px;
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.home__title {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.please {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.or {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
+  font-size: 20px;
+  border: transparent;
+  width: 300px;
+  border-radius: 2px;
+  color: blueviolet;
+  padding: 5px;
+}
+
+.items {
+  row-gap: 20px;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.items__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  color: blueviolet;
+  margin-top: 10px;
+  min-width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(229, 223, 236);
+  align-items: center;
+  font-size: 20px;
+  overflow: auto;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+.item__name {
+  font-size: 20px;
+}

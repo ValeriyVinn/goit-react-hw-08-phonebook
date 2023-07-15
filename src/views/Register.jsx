@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import authOperations from '../redux/auth/auth-operations';
 import { useDispatch } from 'react-redux';
-// import css from '../Styles.module.css';
+import css from '../Styles.module.css';
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -37,9 +37,9 @@ const Register = () => {
   };
 
   return (
-    <div >
-      <h2 >Registration</h2>
-      <form  onSubmit={handleSubmit}>
+    <div className={css.registration__container}>
+      <h2 className={css.home__title}>Registration</h2>
+      <form className={css.form__container} onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
@@ -61,7 +61,7 @@ const Register = () => {
           placeholder="password"
           onChange={handleChange}
         />
-        <button type="submit " >
+        <button type="submit " className={css.form__btn}>
           Registration
         </button>
       </form>

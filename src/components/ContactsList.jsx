@@ -6,13 +6,14 @@ import { useContacts } from './Hooks/hooks';
 import { contactsOperations } from '../redux/contacts/contactsOperations';
 import { useSelector } from 'react-redux';
 import authSelectors from '../redux/auth/auth-selectors';
-// import css from '../Styles.module.css';
+import css from '../Styles.module.css';
 
 export const ContactsList = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
 
   const dispatch = useDispatch();
-  const { contacts, isLoaging, filter } = useContacts();
+  const { contacts, isLoaging, filter } =
+    useContacts();
 
   useEffect(() => {
     dispatch(contactsOperations.getContacts());
@@ -34,10 +35,17 @@ export const ContactsList = () => {
     <div>
       {isLoaging && <Loader />}
       {isLoggedIn && (
-        <ul>
+        <ul className={css.items__container}>
           {contacts &&
             filteredContacts.map(({ id, name, number }) => {
-              return <Contact key={id} id={id} name={name} phone={number} />;
+              return (
+                <Contact
+                key={id}
+                id={id}
+                name={name}
+                phone={number}
+              />
+              );
             })}
         </ul>
       )}

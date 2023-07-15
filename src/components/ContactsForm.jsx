@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useContacts } from './Hooks/hooks';
 import { infoToast, successToast } from './Toasts';
-// import css from '../Styles.module.css';
+import css from '../Styles.module.css';
 
 export const ContacstForm = () => {
   const { contacts, addContact } = useContacts();
@@ -41,8 +41,8 @@ export const ContacstForm = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className={css.cont__container}>
+      <form className={css.form__container} onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
@@ -63,7 +63,9 @@ export const ContacstForm = () => {
           required
           onChange={handleChange}
         />
-        <button type="submit ">Add contact</button>
+        <button type="submit " className={css.form__btn}>
+          Add contact
+        </button>
       </form>
     </div>
   );

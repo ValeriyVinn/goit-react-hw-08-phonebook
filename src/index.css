@@ -1,19 +1,42 @@
-@import-normalize; 
+@import-normalize;
 
-p,
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0px;
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 
-ul {
-  margin: 0px;
-  padding-left: 0px;
-  list-style: none;
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
 }
 
 body {
@@ -28,4 +51,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: yellow;
+  color: blueviolet;
 }

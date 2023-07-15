@@ -1,11 +1,13 @@
 import { useContacts } from './Hooks/hooks';
-// import css from '../Styles.module.css';
+import css from '../Styles.module.css';
 
 export const Filter = () => {
   const { filter, setFilter } = useContacts();
   return (
-    <div>
-      <h2>Filter contacts by name</h2>
+    <div className={css.cont__container}>
+      <h2 className={css.home__title}>
+        Contacts
+        </h2>
       <input
         type="text"
         name="filter"

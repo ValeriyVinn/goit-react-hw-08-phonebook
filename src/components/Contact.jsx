@@ -3,7 +3,7 @@ import { deleteToast } from './Toasts';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { contactsOperations } from '../redux/contacts/contactsOperations';
-// import css from '../Styles.module.css';
+import css from '../Styles.module.css';
 
 export const Contact = ({ id, name, phone }) => {
     
@@ -16,11 +16,11 @@ export const Contact = ({ id, name, phone }) => {
       }, [dispatch]);
 
     return (
-    <li>
-        <p>
+    <li className={css.item}>
+        <p className={css.item__name}>
         {name}: {phone}
         </p>
-        <button  type="button" onClick={() => {
+        <button className={css.user__btn} type="button" onClick={() => {
                       deleteContact(id);
                       deleteToast(`${name} tel:${phone} is deleted`);
                       setFilter('');
