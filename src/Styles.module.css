@@ -233,7 +233,8 @@
 }
 
 .welcome__to:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: red;
 }
 
 .auth__reg {
