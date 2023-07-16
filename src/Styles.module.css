@@ -24,7 +24,6 @@
 .home__container {
   width: 500px;
   background-color: yellow;
-  padding: 30px;
   margin: 0px auto 40px;
   display: flex;
   text-align: center;
@@ -230,6 +229,7 @@
 
 .welcome__to {
   transition-duration: 300ms;
+  font-weight: 400;
 }
 
 .welcome__to:hover {
@@ -252,6 +252,14 @@
 
 .home__title {
   display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.login__title,
+.registration__title {
+  display: flex;
   justify-content: flex-start;
   font-weight: 700;
   color: blueviolet;
@@ -271,8 +279,8 @@
 
 input {
   font-size: 20px;
-  border: transparent;
   width: 300px;
+  border: 1px solid blueviolet;
   border-radius: 2px;
   color: blueviolet;
   padding: 5px;

@@ -38,7 +38,7 @@ const Register = () => {
 
   return (
     <div className={css.registration__container}>
-      <h2 className={css.home__title}>Registration</h2>
+      <h2 className={css.registration__title}>Registration</h2>
       <form className={css.form__container} onSubmit={handleSubmit}>
         <input
           type="text"
@@ -62,7 +62,7 @@ const Register = () => {
           onChange={handleChange}
         />
         <button type="submit " className={css.form__btn}>
-          Registration
+          To register
         </button>
       </form>
     </div>

@@ -9,13 +9,13 @@ export default function AuthNav() {
         className={({ isActive }) => (isActive ? css.active : css.nav__link)}
         to="/register"
       >
-       <span className={css.auth__reg}>REGISTRATION</span> 
+        <span className={css.auth__reg}>REGISTRATION</span>
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? css.active : css.nav__link)}
         to="/login"
       >
-      <span className={css.auth__login}>LOG IN</span>  
+        <span className={css.auth__login}>LOG IN</span>
       </NavLink>
     </div>
   );

@@ -6,9 +6,7 @@ import css from '../Styles.module.css';
 const Contacts = () => {
   return (
     <div className={css.view__container}>
-      <h1 className={css.phonebook__title}>
-        Phonebook
-      </h1>
+      <h1 className={css.phonebook__title}>Phonebook</h1>
       <ContacstForm />
       <Filter />
       <ContactsList />

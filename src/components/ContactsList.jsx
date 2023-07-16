@@ -6,14 +6,14 @@ import { useContacts } from './Hooks/hooks';
 import { contactsOperations } from '../redux/contacts/contactsOperations';
 import { useSelector } from 'react-redux';
 import authSelectors from '../redux/auth/auth-selectors';
+import PropTypes from 'prop-types';
 import css from '../Styles.module.css';
 
 export const ContactsList = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
 
   const dispatch = useDispatch();
-  const { contacts, isLoaging, filter } =
-    useContacts();
+  const { contacts, isLoaging, filter } = useContacts();
 
   useEffect(() => {
     dispatch(contactsOperations.getContacts());
@@ -38,17 +38,20 @@ export const ContactsList = () => {
         <ul className={css.items__container}>
           {contacts &&
             filteredContacts.map(({ id, name, number }) => {
-              return (
-                <Contact
-                key={id}
-                id={id}
-                name={name}
-                phone={number}
-              />
-              );
+              return <Contact key={id} id={id} name={name} phone={number} />;
             })}
         </ul>
       )}
     </div>
   );
+};
+
+ContactsList.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      phone: PropTypes.string.isRequired,
+    })
+  ),
 };

@@ -21,7 +21,6 @@ export const ContacstForm = () => {
       default:
         break;
     }
-    console.log(name, value);
   };
 
   const handleSubmit = async event => {
@@ -49,7 +48,7 @@ export const ContacstForm = () => {
           value={name}
           placeholder="Name"
           pattern="^[a-zA-Z\s]+$"
-            title="Name may contain only latin letters"
+          title="Name may contain only latin letters"
           required
           onChange={handleChange}
         />
@@ -59,7 +58,7 @@ export const ContacstForm = () => {
           value={number}
           placeholder="phone number"
           pattern="^\d{3}-\d{2}-\d{2}$"
-            title="The phone number should look like this: 012-34-56"
+          title="The phone number should look like this: 012-34-56"
           required
           onChange={handleChange}
         />

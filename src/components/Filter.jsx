@@ -5,9 +5,7 @@ export const Filter = () => {
   const { filter, setFilter } = useContacts();
   return (
     <div className={css.cont__container}>
-      <h2 className={css.home__title}>
-        Contacts
-        </h2>
+      <h2 className={css.home__title}>Contacts</h2>
       <input
         type="text"
         name="filter"
